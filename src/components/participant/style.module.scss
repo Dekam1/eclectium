@@ -1,0 +1,41 @@
+.participant {
+    padding: 49px 57px 29px 22px;
+    position: relative;
+    border: 1.5px solid #D9D9D9;
+    display: flex;
+    width: 275px;
+    border-radius: 24px;
+    align-items: center;
+
+    & h3 {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    & span,
+    & span::before,
+    & span::after {
+        content: '';
+        display: inline-block;
+        width: 38px;
+        height: 39px;
+        position: absolute;
+        background-image: url('../../../public/img/star_img.png');
+        background-repeat: no-repeat;
+    }
+
+    & span {
+        left: 113px;
+        top: 18px;
+    }
+
+    & span::before {
+        top: 22px;
+        left: 59px;
+    }
+
+    & span::after {
+        top: 76px;
+        left: 45px;
+    }
+}

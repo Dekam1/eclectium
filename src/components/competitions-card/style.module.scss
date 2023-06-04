@@ -1,0 +1,98 @@
+.competitions__list {
+    border-bottom: 1px solid #DADADA;
+
+    &:last-child {
+        border: none;
+    }
+
+    & article {
+        padding: 48px 48px 44px 25px;
+        display: flex;
+        justify-content: space-between;
+
+        .competitions__left {
+            width: 481px;
+            color: #0B090C;
+
+            & h2 {
+                font-weight: 600;
+                font-size: 40px;
+            }
+
+            & p {
+                opacity: 60%;
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+
+        .competitions__middle {
+            width: 402px;
+            color: #3A3A40;
+
+            & p {
+                margin-bottom: 28px;
+                font-size: 14px;
+            }
+
+            & div {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                & span {
+                    position: relative;
+                    padding: 4px 16px 4px 48px;
+                    border-radius: 16px;
+                    background: #F2F2F2;
+                }
+
+                & span::before {
+                    content: '';
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    left: 16px;
+                    top: calc(50% - 12px);
+                }
+
+                & span:nth-child(1)::before {
+                    background-image: url('../../../public/img/price_img.png');
+                }
+
+                & span:nth-child(2)::before {
+                    background-image: url('../../../public/img/members_img.png');
+                }
+            }
+        }
+
+        .competitions__right {
+            width: 263px;
+
+            & h2 {
+                margin-bottom: 16px;
+                color: #6C6A6C;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            & div {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .competitions__button {
+                margin-top: 26px;
+                border: none;
+                cursor: pointer;
+                padding: 9px 73px;
+                border-radius: 8px;
+                width: 100%;
+                background: #09090C;
+                color: #F5F5F5;
+            }
+        }
+    }
+}

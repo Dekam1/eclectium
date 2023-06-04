@@ -1,0 +1,20 @@
+.competitions__span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border: 2px solid #DADADA;
+    border-radius: 16px;
+
+    & b {
+        color: #0B090C;
+        font-size: 24px;
+    }
+
+    & span {
+        font-size: 14px;
+        color: #6C6A6C;
+    }
+}
