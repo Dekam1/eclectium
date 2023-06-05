@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/eclectium/static/css/main.ee18e098.css",
-    "main.js": "/eclectium/static/js/main.a68e74ec.js",
+    "main.js": "/eclectium/static/js/main.1cfab6d4.js",
     "index.html": "/eclectium/index.html",
     "main.ee18e098.css.map": "/eclectium/static/css/main.ee18e098.css.map",
-    "main.a68e74ec.js.map": "/eclectium/static/js/main.a68e74ec.js.map"
+    "main.1cfab6d4.js.map": "/eclectium/static/js/main.1cfab6d4.js.map"
   },
   "entrypoints": [
     "static/css/main.ee18e098.css",
-    "static/js/main.a68e74ec.js"
+    "static/js/main.1cfab6d4.js"
   ]
 }
