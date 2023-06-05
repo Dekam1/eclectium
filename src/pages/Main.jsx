@@ -3,8 +3,11 @@ import { NavLink } from "react-router-dom";
 import Button from "../components/Button";
 import CompetitionsCard from "../components/competitions-card/CompetitionsCard";
 import Loader from "../components/loader/Loader";
+import { useSelector } from "react-redux";
 
-export default function Main({ loaded, competitions, addedToMyCompetitions, userCompetitions, addCompetition }) {
+export default function Main({ loaded, addedToMyCompetitions }) {
+    const competitions = useSelector(state => state.competitions);
+    const userCompetitions = useSelector(state => state.myCompetitions);
     const buttonsText = ['Current competitions', 'My competitions', 'Archive'];
     const [activeButton, setActiveButton] = React.useState(buttonsText[0]);
 
@@ -27,7 +30,6 @@ export default function Main({ loaded, competitions, addedToMyCompetitions, user
                 return null;
         }
     }
-
 
     console.log(competitions)
 
@@ -62,7 +64,6 @@ export default function Main({ loaded, competitions, addedToMyCompetitions, user
                         {changedCurrent() ? changedCurrent().map(competition => (
                             <CompetitionsCard
                                 key={competition.id}
-                                addCompetition={addCompetition}
                                 addedToMyCompetitions={addedToMyCompetitions(competition.id)}
                                 {...competition}
                             />
